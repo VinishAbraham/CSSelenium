@@ -17,12 +17,12 @@ namespace WebDriverDemo
     {
         static void Main(string[] args)
         {
-            #region Launch MDA in Chrome Incognito
+            #region Launch site in Chrome Maximized
 
             var options = new ChromeOptions();
-            options.AddArgument("incognito");     
-            IWebDriver driver = new ChromeDriver(@"C:\libraries\",options);
-            driver.Url = "https://usnconeboxax1aos.cloud.onebox.dynamics.com/";
+            options.AddArgument("start-maximized");
+            IWebDriver driver = new ChromeDriver(options);
+            driver.Url = "https://google.com/";
 
 
             #endregion
